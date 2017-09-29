@@ -1,1 +1,29 @@
 // Specific CSS for your home-page
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper-results {
+  width: 90vw;
+  height: 100vh;
+  margin: 10px auto;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.form-wrapper {
+  width: 400px;
+  margin: 100px auto;
+}
+
+.form-control {
+  margin: 15px 0;
+}
+
+.form-btn {
+  width: 100%;
+}
+
