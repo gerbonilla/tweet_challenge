@@ -1,0 +1,2 @@
+class Stopword < ApplicationRecord
+end
