@@ -1,8 +1,5 @@
 <div class="wrapper-results">
   <div class="row">
-    <% @word_count.each do |word, count| %>
-    <div class="col-xs-6 col-xs-offset-3 word box text-center"><%= link_to word, tweet_path(Tweet.create(content: word)), method: :put, remote: true %> - <%= count %>
-    </div>
-    <% end %>
+      <%= render 'tweet_table' %>
   </div>
 </div>

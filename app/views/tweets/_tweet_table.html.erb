@@ -1,0 +1,4 @@
+<% Tweet.count_words.each do |word, count| %>
+<div class="col-xs-6 col-xs-offset-3 word text-center"><%= link_to word, tweet_path(Tweet.where(content: word)[0]), method: :put, remote: true %> - <%= count %>
+</div>
+<% end %>

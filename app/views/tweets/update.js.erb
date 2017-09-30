@@ -1,9 +1,5 @@
-// console.log('<%= @letter %>');
-$('.word').each(function(index, value) {
-  // console.log(value.text.charAt(0));
-  var let = '<%= @letter %>';
-  if (value.children[0].text.charAt(0) != let) {
-    // console.log(value.text);
-    $(this).remove();
-  };
-});
+
+$('.word').remove()
+
+$('.row').append('<%= j render 'tweet_table' %>')
+
